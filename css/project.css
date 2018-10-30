@@ -17,6 +17,13 @@ html {
       -ms-text-size-adjust: 100%;
 }
 
+.topBar {
+	position:absolute;
+	height:60px;
+	width:100%;
+	background-color:#3a4860;
+}
+
 .sideMenu {
 	position:absolute;
 	height:100%;
@@ -67,9 +74,16 @@ html {
 }
 
 .icon {
-	position:absolute;
+	position:relative;
+	cursor:pointer;
+	top:5px;
+	left:5px;
 	width:50px;
 	height:50px;
+}
+
+.icon .homeButton {
+	position:absolute;
 }
 
 .thumbnail {
