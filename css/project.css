@@ -12,7 +12,6 @@
 /* this style exists to make it obvious that you've successfully linked
    the CSS to the page. feel free to remove it once the link is working. */
 body {
-     border: 1px dotted gray;
      padding: 20px;
 }
 
@@ -21,8 +20,14 @@ body {
 	background: none;
 }
 
+.textField {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+}
+
 .project {
-	
+
 }
 
 .jumbotron:after {
