@@ -6,21 +6,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Bootstrap -->
-  <link href="../css/bootstrap.min.css" rel="stylesheet">
-  <link href="../css/bootstrap-theme.min.css" rel="stylesheet">
   <link href="../css/project.css" rel="stylesheet">
 </head>
 
 <body>
+
   <div id="topBar">
     <div id="menuButton">
-      <img class="icon" src="../images/menu_btn.png" onClick="showSideMenu()">
+      <img class="icon" src="../images/menu_btn.png" onClick="showSideMenu()"></img>
     </div>
-
   </div>
+
+  <div class="sideMenu" id="sideMenu">
+    <a class="closeButton" onClick="hideSideMenu()">&times</a>
+    <a class="menuHeader" href="#"><img class="thumbnail" src="../images/profile_pic.png" alt="Profile Picture" /> Username</a>
+    <div class="divider"></div>
+    <a class="menuOption" href="#" onClick="rotateArrow"><img class="dropArrow" id=favoritesArrow src="../images/drop_arrow.png" />Favorites</a>
+    <a class="menuOption" href="#" onClick="rotateArrow()"><img class="dropArrow" id=settingsArrow src="../images/drop_arrow.png" />Settings</a>
+    <a class="menuOption" href="index.html">Logout</a>
+  </div>
+
+
+
 
 
 <script src="https://code.jquery.com/jquery.js"></script>
 <script src="../js/bootstrap.min.js"></script>
+<script src="../js/project.js"></script>
 </body>
 </html>

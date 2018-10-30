@@ -11,14 +11,89 @@
 
 /* this style exists to make it obvious that you've successfully linked
    the CSS to the page. feel free to remove it once the link is working. */
-body {
-     padding: 20px;
+html {
+	font-family:sans-serif;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+
+.sideMenu {
+	position:absolute;
+	height:100%;
+	width:0px;
+	z-index:1;
+	overflow-x:hidden;
+	transition:0.4s;
+	padding-top:20px;
+	background-color:#3a4860;
+}
+
+.sideMenu .menuOption {
+	font-size:40px;
+	white-space:nowrap;
+	color:#000000;
+	text-decoration:none;
+	margin:5px 5px 5px 5px;
+	padding:0px 0px 0px 70px;
+	display:block;
+}
+
+.sideMenu .menuHeader {
+	font-size:40px;
+	color:#000000;
+	white-space:nowrap;
+	text-decoration:none;
+	margin:5px 5px 5px 5px;
+	padding:0px 50px 0px 20px;
+	display:block;
+}
+
+.sideMenu .menuHeader:hover {
+	background-color:#91a1bc;
+}
+
+.sideMenu .menuOption:hover {
+	background-color:#91a1bc;
+}
+
+.sideMenu .closeButton {
+	position:absolute;
+	text-decoration:none;
+	top:-3px;
+	font-size:30px;
+	color:#000000;
+	right:10px;
+	cursor:pointer;
 }
 
 .icon {
-	width:100px;
-	height:100px;
-	padding:20px;
+	position:absolute;
+	width:50px;
+	height:50px;
+}
+
+.thumbnail {
+	width:50px;
+	height:50px;
+	padding:10px 0px 0px 0px;
+}
+
+.dropArrow {
+	height:20px;
+	width:20px;
+	transition:.3s;
+	transform:rotate(0deg);
+}
+
+.divider {
+	background-color:#ffffff;
+	height:1px;
+	width:390px;
+	z-index:1;
+	overflow-x:hidden;
+	transition:0.4s;
+	margin-left:5px;
+	margin-right:5px;
 }
 
 .jumbotron {
