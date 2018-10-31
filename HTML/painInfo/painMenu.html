@@ -32,19 +32,20 @@
 
   <!-- END TOP BAR HTML -->
 
+
 <!-- search menu -->
 <div class="mhleft">
   <h2>Menu<h2>
-  <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search for an exercise..." title="Type in a category">
+  <input type="text" id="mySearch" onkeyup="searchableMenu()" placeholder="Search for an exercise..." title="Type in a category">
 
   <ul id="myMenu">
-    <li><a href="#">Squats</a></li>
-    <li><a href="#">Deadlift</a></li>
-    <li><a href="#">Sit-up</a></li>
-    <li><a href="#">Lunges</a></li>
-    <li><a href="#">Plank</a></li>
-    <li><a href="#">Bench Press</a></li>
-    <li><a href="#">Bent-Over Rows</a></li>
+    <li><a onclick="setExercise('squats')" href="chooseBodyPart.html">Squats</a></li>
+    <li><a onclick="setExercise('deadlift')" href="chooseBodyPart.html">Deadlift</a></li>
+    <li><a onclick="setExercise('situp')" href="chooseBodyPart.html">Sit-up</a></li>
+    <li><a onclick="setExercise('lunges')" href="chooseBodyPart.html">Lunges</a></li>
+    <li><a onclick="setExercise('plank')" href="chooseBodyPart.html">Plank</a></li>
+    <li><a onclick="setExercise('benchpress')" href="chooseBodyPart.html">Bench Press</a></li>
+    <li><a onclick="setExercise('bentoverrow')" href="chooseBodyPart.html">Bent-Over Rows</a></li>
   </ul>
 </div>
 
