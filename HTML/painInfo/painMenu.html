@@ -1,0 +1,56 @@
+<!doctype html>
+
+<html>
+<head>
+  <title>Gym App - Pain Information Menu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap -->
+  <link href="../../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../css/bootstrap-theme.min.css" rel="stylesheet">
+  <link href="../../css/project.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- TOP BAR HTML -->
+  <div class="topBar" id="topBar">
+      <img id="menuButton" class="icon" src="../../images/menu_btn.png" onClick="showSideMenu()" />
+      <a id="homeButton" href="../home.html"><img class="icon homeButton" src="../../images/home_btn.png" /></a>
+  </div>
+
+
+  <div class="sideMenu" id="sideMenu">
+    <a class="closeButton" onClick="hideSideMenu()">&times</a>
+    <a class="menuHeader" href="#"><img class="profileThumbnail" src="../../images/profile_pic.png" alt="Profile Picture" /> Username</a>
+    <div class="divider"></div>
+    <a class="menuOption" href="#" onClick="rotateArrow()"><img class="dropArrow" id=favoritesArrow src="../../images/drop_arrow.png" />Favorites</a>
+    <a class="menuOption" href="#" onClick="rotateArrow()"><img class="dropArrow" id=settingsArrow src="../../images/drop_arrow.png" />Settings</a>
+    <a class="menuOption" href="index.html">Logout</a>
+  </div>
+
+
+  <!-- END TOP BAR HTML -->
+
+
+<!-- search menu -->
+<div class="mhleft">
+  <h2>Menu<h2>
+  <input type="text" id="mySearch" onkeyup="searchableMenu()" placeholder="Search for an exercise..." title="Type in a category">
+
+  <ul id="myMenu">
+    <li><a onclick="setExercise('squats')" href="chooseBodyPart.html">Squats</a></li>
+    <li><a onclick="setExercise('deadlift')" href="chooseBodyPart.html">Deadlift</a></li>
+    <li><a onclick="setExercise('situp')" href="chooseBodyPart.html">Sit-up</a></li>
+    <li><a onclick="setExercise('lunges')" href="chooseBodyPart.html">Lunges</a></li>
+    <li><a onclick="setExercise('plank')" href="chooseBodyPart.html">Plank</a></li>
+    <li><a onclick="setExercise('benchpress')" href="chooseBodyPart.html">Bench Press</a></li>
+    <li><a onclick="setExercise('bentoverrow')" href="chooseBodyPart.html">Bent-Over Rows</a></li>
+  </ul>
+</div>
+
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+<script src="../../js/project.js"></script>
+</body>
+</html>
