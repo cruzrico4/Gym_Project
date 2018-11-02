@@ -1,0 +1,51 @@
+<!doctype html>
+
+<html>
+<head>
+  <title>Gym App - Deadlift Advice</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap -->
+  <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../../css/bootstrap-theme.min.css" rel="stylesheet">
+  <link href="../../../css/project.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- TOP BAR HTML -->
+  <div class="topBar" id="topBar">
+      <img id="menuButton" class="icon" src="../../../images/menu_btn.png" onClick="showSideMenu()" />
+      <a id="homeButton" href="../../home.html"><img class="icon homeButton" src="../../../images/home_btn.png" /></a>
+  </div>
+
+
+  <div class="sideMenu" id="sideMenu">
+    <a class="closeButton" onClick="hideSideMenu()">&times</a>
+    <a class="menuHeader" ><img class="profileThumbnail" src="../../../images/profile_pic.png" alt="Profile Picture" /> Username</a>
+    <div class="divider"></div>
+
+    <!-- COMMENTED OUT FOR A4-->
+    <!-- a class="menuOption" href="#" onClick="rotateArrow()"><img class="dropArrow" id=favoritesArrow src="../../images/drop_arrow.png" />Favorites</a -->
+
+    <a class="menuOption" href="../../settings.html">Settings</a>
+    <a class="menuOption" href="../../index.html">Logout</a>
+  </div>
+
+
+  <!-- END TOP BAR HTML -->
+
+  <!-- PAGE HTML -->
+  <div class="page">
+    <h2>Advice and an instructional video for the chosen exercise</h2>
+    <!-- hiding workoutPlanner for later implementation as stretch goal <div>
+      <a class="btn btn-default btn-lg pageItem" href="workoutPlanner/workoutPlannerHome.html">Workout Planner</a>
+    </div>-->
+  </div>
+  <!-- END PAGE HTML -->
+
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="../../../js/bootstrap.min.js"></script>
+<script src="../../../js/project.js"></script>
+</body>
+</html>
