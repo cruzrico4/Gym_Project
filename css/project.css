@@ -24,6 +24,12 @@ h1 {
 	margin:0px;
 }
 
+h2 {
+	text-align:center;
+	padding:8px;
+	margin:0px;
+}
+
 .topBar {
 	position:absolute;
 	height:60px;
