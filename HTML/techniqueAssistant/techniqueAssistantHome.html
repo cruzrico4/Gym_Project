@@ -31,22 +31,20 @@
   <!-- END TOP BAR HTML -->
 
   <!-- PAGE HTML -->
-  <div class="page">
-    <div>
-      <a class="btn btn-default btn-lg pageItem" href="squats.html">Squats</a>
-    </div>
-    <div>
-      <a class="btn btn-default btn-lg pageItem" href="#">Blah</a>
-    </div>
-    <div>
-      <a class="btn btn-default btn-lg pageItem" href="#">Blah</a>
-    </div>
-    <div>
-      <a class="btn btn-default btn-lg pageItem" href="#">Blah</a>
-    </div>
-    <div>
-      <a class="btn btn-default btn-lg pageItem" href="#">Blah</a>
-    </div>
+  <!-- search menu -->
+  <div class="mhleft">
+    <h2>Menu<h2>
+    <input type="text" id="mySearch" onkeyup="searchableMenu()" placeholder="Search for an exercise..." title="Type in a category">
+
+    <ul id="myMenu">
+      <li><a onclick="setExercise('squats')" href="chooseBodyPart.html">Squats</a></li>
+      <li><a onclick="setExercise('deadlift')" href="chooseBodyPart.html">Deadlift</a></li>
+      <li><a onclick="setExercise('situp')" href="chooseBodyPart.html">Sit-up</a></li>
+      <li><a onclick="setExercise('lunges')" href="chooseBodyPart.html">Lunges</a></li>
+      <li><a onclick="setExercise('plank')" href="chooseBodyPart.html">Plank</a></li>
+      <li><a onclick="setExercise('benchpress')" href="chooseBodyPart.html">Bench Press</a></li>
+      <li><a onclick="setExercise('bentoverrow')" href="chooseBodyPart.html">Bent-Over Rows</a></li>
+    </ul>
   </div>
   <!-- END PAGE HTML -->
 
