@@ -19,13 +19,17 @@
 
   <div class="sideMenu" id="sideMenu">
     <a class="closeButton" onClick="hideSideMenu()">&times</a>
-    <p class="menuHeader"><img class="profileThumbnail" src="../../images/profile_pic.png" alt="Profile Picture" /> Username</p>
+    <a class="menuHeader" href="#"><img class="profileThumbnail" src="../../images/profile_pic.png" alt="Profile Picture" /> Username</a>
     <div class="divider"></div>
 
     <!-- COMMENTED OUT FOR A4-->
     <!-- a class="menuOption" href="#" onClick="rotateArrow()"><img class="dropArrow" id=favoritesArrow src="../../images/drop_arrow.png" />Favorites</a -->
 
+<<<<<<< HEAD
+    <a class="menuOption" href="../settings.html">Settings</a>
+=======
     <a class="menuOption" href="../settings.html" onClick="rotateArrow()"><!--img class="dropArrow" id=settingsArrow src="../../images/drop_arrow.png" /-->Settings</a>
+>>>>>>> c4e1c5f0ed2d70a845f2ab401663dccbf1ea3754
     <a class="menuOption" href="index.html">Logout</a>
   </div>
 
@@ -44,7 +48,7 @@
       document.getElementById("lowback").href = "lowback/" + window.localStorage.exercise + ".html";
       document.getElementById("ankle").href = "ankle/" + window.localStorage.exercise + ".html";
       document.getElementById("wrist").href = "wrist/" + window.localStorage.exercise + ".html";
-      document.getElementById("wrist2").href = "Wrist/" + window.localStorage.exercise + ".html";
+      document.getElementById("wrist2").href = "wrist/" + window.localStorage.exercise + ".html";
       document.getElementById("backneck").href = "backneck/" + window.localStorage.exercise + ".html";
       document.getElementById("throat").href = "throat/" + window.localStorage.exercise + ".html";
       document.getElementById("shoulderblade").href = "shoulderblade/" + window.localStorage.exercise + ".html";
