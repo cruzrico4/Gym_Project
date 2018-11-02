@@ -17,6 +17,13 @@ html {
       -ms-text-size-adjust: 100%;
 }
 
+h1 {
+	font-size:36pt;
+	text-align:center;
+	padding:8px;
+	margin:0px;
+}
+
 .topBar {
 	position:absolute;
 	height:60px;
@@ -112,6 +119,14 @@ html {
 }
 .pageItems {
 	text-align:center;
+}
+
+.homeOptions {
+	font-size:20pt;
+	margin:10px;
+	width:350px;
+	padding:30px;
+
 }
 
 .jumbotron {

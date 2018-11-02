@@ -2,7 +2,7 @@
 
 <html>
 <head>
-  <title>Gym App - Home</title>
+  <title>Gym App - Squats Technique</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Bootstrap -->
@@ -15,9 +15,11 @@
 
   <!-- TOP BAR HTML -->
   <div class="topBar" id="topBar">
-      <img class="icon" src="../../images/menu_btn.png" onClick="showSideMenu()"></img>
-      <a href="../home.html"><img class="icon" src="../../images/back_btn.png" /></a>
+      <img id="menuButton" class="icon" src="../../images/menu_btn.png" onClick="showSideMenu()" />
+      <a id="backButton"href="techniqueAssistantHome.html"><img class="icon" src="../../images/back_btn.png" /></a>
+      <a id="homeButton" href="../home.html"><img class="icon homeButton" src="../../images/home_btn.png" /></a>
   </div>
+
 
   <div class="sideMenu" id="sideMenu">
     <a class="closeButton" onClick="hideSideMenu()">&times</a>
@@ -28,25 +30,11 @@
     <a class="menuOption" href="index.html">Logout</a>
   </div>
 
+
   <!-- END TOP BAR HTML -->
 
-  <!-- PAGE HTML -->
-  <!-- search menu -->
-  <div class="mhleft">
-    <h2>Menu<h2>
-    <input type="text" id="mySearch" onkeyup="searchableMenu()" placeholder="Search for an exercise..." title="Type in a category">
 
-    <ul id="myMenu">
-      <li><a onclick="setExercise('squats')" href="exercises/squats.html">Squats</a></li>
-      <li><a onclick="setExercise('deadlift')" href="exercises/deadlift.html">Deadlift</a></li>
-      <li><a onclick="setExercise('situp')" href="exercises/situp.html">Sit-up</a></li>
-      <li><a onclick="setExercise('lunges')" href="exercises/lunges.html">Lunges</a></li>
-      <li><a onclick="setExercise('plank')" href="exercises/plank.html">Plank</a></li>
-      <li><a onclick="setExercise('benchpress')" href="exercises/benchpress.html">Bench Press</a></li>
-      <li><a onclick="setExercise('bentoverrow')" href="exercises/bentoverrow.html">Bent-Over Rows</a></li>
-    </ul>
-  </div>
-  <!-- END PAGE HTML -->
+
 
 <script src="https://code.jquery.com/jquery.js"></script>
 <script src="../../js/bootstrap.min.js"></script>
