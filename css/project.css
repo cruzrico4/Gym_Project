@@ -55,10 +55,6 @@ html {
 	display:block;
 }
 
-.sideMenu .menuHeader:hover {
-	background-color:#91a1bc;
-}
-
 .sideMenu .menuOption:hover {
 	background-color:#91a1bc;
 }
@@ -114,10 +110,8 @@ html {
 	position:relative;
 	top:60px;
 }
-.pageItem {
-	position:relative;
-	width:200px;
-	margin:5px;
+.pageItems {
+	text-align:center;
 }
 
 .jumbotron {
