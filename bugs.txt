@@ -1,0 +1,1 @@
+home button on pain info page has a non existent link--- add ../ to home button href to fix
