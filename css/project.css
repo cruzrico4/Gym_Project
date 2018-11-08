@@ -9,16 +9,25 @@
 	color: #CC00AA;
 }
 
+:root {
+	--pg-color:white;
+	--bg-color: #3a4860;
+	--txt-color:#000000;
+	--hvr-color:#515F77;
+}
+
 /* this style exists to make it obvious that you've successfully linked
    the CSS to the page. feel free to remove it once the link is working. */
 html {
 	font-family:sans-serif;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
+	background-color:var(--pg-color);
 }
 
 h1 {
 	font-size:36pt;
+	color:var(--txt-color);
 	text-align:center;
 	padding:8px;
 	margin:0px;
@@ -27,6 +36,7 @@ h1 {
 
 h2 {
 	text-align:center;
+	color:var(--txt-color);
 	padding:8px;
 	margin:0px;
 }
@@ -35,7 +45,8 @@ h2 {
 	position:absolute;
 	height:60px;
 	width:100%;
-	background-color:#3a4860;
+	transition:.3s;
+	background-color:var(--bg-color);
 }
 
 .sideMenu {
@@ -44,15 +55,15 @@ h2 {
 	width:0px;
 	z-index:1;
 	overflow-x:hidden;
-	transition:0.4s;
+	transition:.3s;
 	padding-top:20px;
-	background-color:#3a4860;
+	background-color:var(--bg-color);
 }
 
 .sideMenu .menuOption {
 	font-size:40px;
+	color:var(--txt-color);
 	white-space:nowrap;
-	color:#000000;
 	text-decoration:none;
 	margin:5px 5px 5px 5px;
 	padding:0px 0px 0px 20px;
@@ -61,16 +72,16 @@ h2 {
 
 .sideMenu .menuHeader {
 	position:absolute;
+	color:var(--txt-color);
 	margin:30px 5px 5px 5px;
 	padding:0px 50px 0px 10px;
 	font-size:40px;
-	color:#000000;
 	white-space:nowrap;
 	text-decoration:none;
 }
 
 .sideMenu .menuOption:hover {
-	background-color:#91a1bc;
+	background-color:var(--hvr-color);
 }
 
 .sideMenu .closeButton {
@@ -105,17 +116,44 @@ h2 {
 .dropArrow {
 	height:20px;
 	width:20px;
+	margin-right:10px;
 	transition:.3s;
-	transform:rotate(0deg);
+}
+
+.dropMenu {
+	position:relative;
+	overflow-x:hidden;
+	height:0px;
+	top:-5px;
+	background-color: transparent;
+	transition:.3s;
+}
+
+.dropMenu .dropOption {
+	font-size:20px;
+	font-weight:normal;
+	color:var(--txt-color);
+	transition:.3s;
+	white-space:nowrap;
+	text-decoration:none;
+	margin:5px 5px 5px 5px;
+	padding:0px 0px 0px 5px;
+}
+
+.setting {
+	text-align: left;
+	color:var(--txt-color);
+	cursor:default;
+	padding-right:80px;
 }
 
 .divider {
-	background-color:#ffffff;
+	background-color:var(--txt-color);
 	height:1px;
 	width:390px;
 	z-index:1;
 	overflow-x:hidden;
-	transition:0.4s;
+	transition:.3s;
 	margin-left:5px;
 	margin-right:5px;
 }
@@ -128,11 +166,13 @@ h2 {
 }
 
 .page {
+	background-color:var(--pg-color);
 	position:relative;
 	top:60px;
 }
 .pageItems {
 	text-align:center;
+	color:var(--txt-color);
 }
 
 .homeOptions {
@@ -140,6 +180,7 @@ h2 {
 	margin:10px;
 	width:350px;
 	padding:30px;
+	color:var(--txt-color);
 
 }
 
@@ -187,10 +228,18 @@ h2 {
   padding: 12px;
   text-decoration: none;
   font-size: 18px;
-  color: black;
   display: block
 }
 
 #myMenu li a:hover {
-  background-color: #eee;
+  background-color: var(--hvr-color);
+}
+
+.flip {
+  transform: rotate(-180deg);
+}
+
+.drop {
+	height:200px;
+	background-color:var(--bg-color);
 }

@@ -43,12 +43,53 @@
   <div class="container page">
     <h1>Settings</h1>
     <div class="container titleUnderline"></div>
-  </div>
-  <!-- END PAGE HTML -->
+    <h2 id="profilePic" class="toggle setting"><img id="profilePicArrow" class="dropArrow" src="../images/drop_arrow.png">Profile Picture</h2>
+      <div id="profilePicOptions" class="dropMenu">
 
+      </div>
+    <h2 id="colorTheme" class="toggle setting"><img id="themeArrow" class="dropArrow" src="../images/drop_arrow.png">Change Theme</h2>
+    <div id="themeOptions" class="dropMenu">
+      <form>
+        <label id="classic" class="dropOption">
+          <input type="radio" name="theme" value="Classic" checked> <span class="dropOption">Classic</span>
+        </label>
+        <br>
+        <label id="dark" class="dropOption">
+          <input type="radio" name="theme" value="Dark"> <span class="dropOption">Dark</span>
+        </label>
+        <br>
+        <label id="triton" class="dropOption">
+          <input type="radio" name="theme" value="Triton"> <span class="dropOption">Triton</span>
+        </label>
+    </div>
+</div>
+  <!-- END PAGE HTML -->
 
 <script src="https://code.jquery.com/jquery.js"></script>
 <script src="../js/bootstrap.min.js"></script>
 <script src="../js/project.js"></script>
+
+<script>
+  $("#classic").click(function() {
+    document.documentElement.style.setProperty('--bg-color', '#3a4860');
+    document.documentElement.style.setProperty('--pg-color', 'white');
+    document.documentElement.style.setProperty('--txt-color', 'black');
+    document.documentElement.style.setProperty('--hvr-color', '#515F77');
+
+  });
+  $("#dark").click(function() {
+    document.documentElement.style.setProperty('--bg-color', '#252525');
+    document.documentElement.style.setProperty('--pg-color', 'black');
+    document.documentElement.style.setProperty('--txt-color', '#949393');
+    document.documentElement.style.setProperty('--hvr-color', '#606060');
+
+  });
+  $("#triton").click(function() {
+    document.documentElement.style.setProperty('--bg-color', '#182B49');
+    document.documentElement.style.setProperty('--pg-color', '#006A96');
+    document.documentElement.style.setProperty('--txt-color', '#C69214');
+  });
+</script>
+
 </body>
 </html>

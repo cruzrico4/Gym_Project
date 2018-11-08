@@ -25,6 +25,22 @@ function searchableMenu() {
     }
 }
 
+$(document).ready(function() {
+    $( "#profilePic.toggle" ).click( function() {
+        $("#profilePicArrow").toggleClass('flip');
+
+        $("#profilePicOptions").toggleClass('drop');
+    });
+});
+
+$(document).ready(function() {
+    $( "#colorTheme.toggle" ).click( function() {
+        $("#themeArrow").toggleClass('flip');
+
+        $("#themeOptions").toggleClass('drop');
+    });
+});
+
 function setExercise(exerciseName){
   window.localStorage.exercise = exerciseName;
 }
