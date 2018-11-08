@@ -40,7 +40,9 @@ function checkUser(){
   if(user==localStorage.getItem("username") && pass==localStorage.getItem("password")){
     window.location.href = "home.html";
   }
-  else {
+  else if(pass!=localStorage.getItem("password")) {
+    alert("Incorrect password!");
+  } else {
     alert("User not found!");
   }
 }
