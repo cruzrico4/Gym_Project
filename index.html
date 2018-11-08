@@ -6,22 +6,34 @@
   <!--meta name="viewport" content="width=device-width, initial-scale=1.0"-->
 
   <!-- Bootstrap -->
-  <link href="../css/bootstrap.min.css" rel="stylesheet">
-  <link href="../css/bootstrap-theme.min.css" rel="stylesheet">
-  <link href="../css/project.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+  <link href="css/project.css" rel="stylesheet">
 </head>
 
 <body>
-  <div style="margin-bottom:10px" id="createUser">
-    <a class="btn btn-default btn-sm" href="HTML/createUser.html">Create User</a>
+
+  <div class="topBar">
+
+  </div>
+  <div class="container page">
+    <div>
+      <h1>Welcome!</h1>
+    </div>
+
+    <div>
+      <h2>Create a new user if you're new, or log in with an existing user!</h2>
+    </div>
+    <ul class="pageItems" id="myMenu">
+      <col><a class="btn btn-default homeOptions" href="HTML/createUser.html">Create User</a></col>
+      <col><a class="btn btn-default homeOptions" href="HTML/login.html">Log In</a></col>
+    </ul>
   </div>
 
-  <div style="margin-bottom:10px" id="login">
-    <a class="btn btn-default btn-sm" href="HTML/login.html">Log In</a>
-  </div>
+
 
 
 <script src="https://code.jquery.com/jquery.js"></script>
-<script src="../js/bootstrap.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>

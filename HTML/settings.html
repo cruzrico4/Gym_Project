@@ -22,14 +22,17 @@
 
   <div class="sideMenu" id="sideMenu">
     <a class="closeButton" onClick="hideSideMenu()">&times</a>
-    <a class="menuHeader" href="#"><img class="profileThumbnail" src="../images/profile_pic.png" alt="Profile Picture" /> Username</a>
+    <div>
+      <img class="profileThumbnail" src="../images/profile_pic.png" alt="Profile Picture" />
+      <span id="username" class="menuHeader" style="top:0px"> Username</span>
+    </div>
     <div class="divider"></div>
 
     <!-- COMMENTED OUT FOR A4-->
     <!-- a class="menuOption" href="#" onClick="rotateArrow()"><img class="dropArrow" id=favoritesArrow src="../../images/drop_arrow.png" />Favorites</a -->
 
-    <a class="menuOption" href="../settings.html">Settings</a>
-    <a class="menuOption" href="../../index.html">Logout</a>
+    <a class="menuOption" href="settings.html">Settings</a>
+    <a class="menuOption" href="../index.html">Logout</a>
   </div>
 
 

@@ -6,10 +6,6 @@ function hideSideMenu() {
   document.getElementById("sideMenu").style.width="0px";
 }
 
-function rotateArrow() {
-
-}
-
 function searchableMenu() {
     // Declare variables
     var input, filter, ul, li, a, i;
@@ -31,4 +27,10 @@ function searchableMenu() {
 
 function setExercise(exerciseName){
   window.localStorage.exercise = exerciseName;
+}
+
+/** Start User data Code **/
+var username = localStorage.getItem("username");
+if(username) {
+    document.getElementById("username").innerHTML = username;
 }
