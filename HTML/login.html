@@ -26,8 +26,9 @@
         <input id="pass" class="textField" required type="password" name="password">
         <br>
         <div>
-        <a id="submit" onClick="checkUser()" class="btn btn-default btn-sm">Submit</a>
-        <a class="btn btn-default btn-sm" href="../index.html">Cancel</a>
+          <a id="submit" onClick="checkUser()" class="btn btn-default btn-sm">Submit</a>
+          <a class="btn btn-default btn-sm" href="../index.html">Cancel</a>
+        </div>
       </form>
     </div>
   </div>
@@ -40,13 +41,28 @@ function checkUser(){
   if(user==localStorage.getItem("username") && pass==localStorage.getItem("password")){
     window.location.href = "home.html";
   }
-  else if(pass!=localStorage.getItem("password")) {
-    alert("Incorrect password!");
-  } else {
+  else if(user!=localStorage.getItem("username")) {
     alert("User not found!");
+  } else {
+    alert("Incorrect password!");
   }
 }
 </script>
+
+<script>
+//Add enter listener (login form doesn't use submit input)
+  document.querySelector('#pass').addEventListener('keypress', function(e) {
+    if(e.key == 'Enter') {
+      checkUser();
+    }
+  });
+  document.querySelector('#user').addEventListener('keypress', function(e) {
+    if(e.key == 'Enter') {
+      checkUser();
+    }
+  });
+</script>
+
 <script src="https://code.jquery.com/jquery.js"></script>
 <script src="../js/bootstrap.min.js"></script>
 </body>
