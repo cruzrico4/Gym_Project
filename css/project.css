@@ -119,6 +119,13 @@ h2 {
 	margin-right:5px;
 }
 
+.titleUnderline {
+	background-color:#000000;
+	height:1px;
+	width:300px;
+	margin-bottom:10px;
+}
+
 .page {
 	position:relative;
 	top:60px;
