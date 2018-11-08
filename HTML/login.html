@@ -12,21 +12,24 @@
 </head>
 
 <body>
+  <div class="topBar">
+  </div>
   <div id="userField">
-    <form action="home.html" method="post"> <!-- CHANGE TO save_user.html LATER -->
-      Username:
-      <br>
-      <input id="user" class="textField" required type="text" name="username">
-      <br>
-      Password:
-      <br>
-      <input id="pass" class="textField" required type="password" name="password">
-      <br>
-      <div>
-      <a id="submit" onClick="checkUser()" class="btn btn-default btn-sm">Submit</a>
-      <a class="btn btn-default btn-sm" href="../index.html">Cancel</a>
-    </form>
-
+    <div class="container page" id="userCreate">
+      <form action="home.html"> <!-- CHANGE TO save_user.html LATER -->
+        Username:
+        <br>
+        <input id="user" class="textField" required type="text" name="username">
+        <br>
+        Password:
+        <br>
+        <input id="pass" class="textField" required type="password" name="password">
+        <br>
+        <div>
+        <a id="submit" onClick="checkUser()" class="btn btn-default btn-sm">Submit</a>
+        <a class="btn btn-default btn-sm" href="../index.html">Cancel</a>
+      </form>
+    </div>
   </div>
 
 <script>
