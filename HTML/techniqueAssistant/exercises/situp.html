@@ -42,11 +42,32 @@
   <!-- END TOP BAR HTML -->
 
   <!-- PAGE HTML -->
-  <div class="page">
-    <h2>Advice and an instructional video for the chosen exercise</h2>
-    <!-- hiding workoutPlanner for later implementation as stretch goal <div>
-      <a class="btn btn-default btn-lg pageItem" href="workoutPlanner/workoutPlannerHome.html">Workout Planner</a>
-    </div>-->
+  <!-- PAGE HTML -->
+  <div class="container-fluid">
+    <h1>advice page</h1>
+    <div class="row">
+      <div class="col-sm-7">
+        <h1> How To Do Situps: </h1>
+          <div class="iframe-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/10mp1wusuzM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+      </div>
+      <div class="col-sm-5">
+        <h2>Instructions:</h2>
+        <ol class="ExDetail-descriptionSteps">
+          <li class="ExDetail-descriptionStep">Lie down on the floor placing your feet either under something that will not move or by having a partner hold them. Your legs should be bent at the knees.</li>
+          <li class="ExDetail-descriptionStep">Place your hands behind your head and lock them together by clasping your fingers. This is the starting position.</li>
+          <li class="ExDetail-descriptionStep">Elevate your upper body so that it creates an imaginary V-shape with your thighs. Breathe out when performing this part of the exercise.</li>
+          <li class="ExDetail-descriptionStep">Once you feel the contraction for a second, lower your upper body back down to the starting position while inhaling.</li>
+          <li class="ExDetail-descriptionStep">Repeat for the recommended amount of repetitions.</li>
+        </ol>
+        <h3 class="painMessage"> Feeling pain from this exercise? </h3>
+        <h4 class="painMessage"> Our exercise pain guide can help you identify why and learn how to fix it: </h4>
+        <div class="centeringBox">
+          <a class="btn btn-default toPainMenu" onclick="setExercise('situp')" href="../../painInfo/chooseBodyPart.html">Go to pain information</a>
+        </div>
+      </div>
+    </div>
   </div>
   <!-- END PAGE HTML -->
 
