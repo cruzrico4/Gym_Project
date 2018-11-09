@@ -246,3 +246,28 @@ h2 {
 	height:200px;
 	background-color:var(--bg-color);
 }
+
+.iframe-container{
+	position: relative;
+	width: 100%;
+	padding-bottom: 56.25%;
+}
+
+.iframe-container iframe{
+	position: absolute;
+	top: 5%;
+	left: 5%;
+	width: 90%;
+	height: 90%;
+}
+
+.ExDetail-descriptionSteps {
+		margin-top: 68px;
+    margin-left: 0;
+		margin-right: 14px; 
+    padding-left: 1em;
+}
+
+.ExDetail-descriptionStep {
+    margin-bottom: .8em;
+}
