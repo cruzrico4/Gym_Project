@@ -51,7 +51,7 @@ function setTheme() {
         arrows[i].style.filter = "invert(0)";
       } catch(err){}
     }
-    if(theme=="dark") {
+    else if(theme=="dark") {
       document.documentElement.style.setProperty('--bg-color', '#252525');
       document.documentElement.style.setProperty('--grd-color', '#121212');
       document.documentElement.style.setProperty('--clk-color', '#171717');
@@ -65,7 +65,7 @@ function setTheme() {
         arrows[i].style.filter = "invert(1)";
       } catch(err){}
     }
-    if(theme=="triton") {
+    else if(theme=="triton") {
       document.documentElement.style.setProperty('--bg-color', '#182B49');
       document.documentElement.style.setProperty('--grd-color', '#16253B');
       document.documentElement.style.setProperty('--pg-color', '#006A96');
