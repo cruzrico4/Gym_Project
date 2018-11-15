@@ -23,7 +23,7 @@
   <div class="sideMenu" id="sideMenu">
     <a class="closeButton" onClick="hideSideMenu()">&times</a>
     <div>
-      <img class="profileThumbnail" src="../images/profile_pic.png" alt="Profile Picture" />
+      <img id="profileThumbnail" class="profileThumbnail" src="../images/profile_pic.png" alt="Profile Picture" />
       <span id="username" class="menuHeader" style="top:0px"> Username</span>
     </div>
     <div class="divider"></div>
@@ -45,7 +45,12 @@
     <div class="container titleUnderline"></div>
     <h2 id="profilePic" class="toggle setting"><img id="profilePicArrow" class="dropArrow" src="../images/drop_arrow.png">Profile Picture</h2>
       <div id="profilePicOptions" class="dropMenu">
-
+        <h2>Set your profile picture with a link to a picture</h2>
+        <div id="profileUnderline" class="titleUnderline container"></div>
+        <form>
+          <span class="dropOption">Image URL:</span>
+          <input id="url" class="textField" type="text" value="">
+          <a class="button button-small" onClick="setProfilePic()">Submit</a>
       </div>
     <h2 id="colorTheme" class="toggle setting"><img id="themeArrow" class="dropArrow" src="../images/drop_arrow.png">Change Theme</h2>
     <div id="themeOptions" class="dropMenu">
@@ -84,6 +89,12 @@
   });
 </script>
 
+<script>
+  function setProfilePic() {
+    var imgURL = document.getElementById("url").value;
+    localStorage.setItem("ProfilePic", imgURL);
+  }
+</script>
 <script>
   var theme = localStorage.getItem("Theme");
   document.getElementById(theme).click();

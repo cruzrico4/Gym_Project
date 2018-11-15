@@ -50,6 +50,13 @@ h2 {
 	margin:0px;
 }
 
+text {
+	font-size: 16pt;
+	color:var(--txt-color);
+	padding: 8px;
+	margin: 0px;
+}
+
 #buttonContainer {
 	margin-top:50px;
 }
@@ -181,7 +188,7 @@ h2 {
 	transition:.3s;
 	white-space:nowrap;
 	text-decoration:none;
-	margin:5px 5px 5px 5px;
+	margin:8px 5px 5px 5px;
 	padding:0px 0px 0px 5px;
 }
 
@@ -208,6 +215,10 @@ h2 {
 	height:1px;
 	width:300px;
 	margin-bottom:10px;
+}
+
+#profileUnderline {
+	width:500px;
 }
 
 .page {
