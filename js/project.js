@@ -30,7 +30,7 @@ function searchableMenu() {
 function setTheme() {
 
     /*Set Profile Picture*/
-    if($("#profileThumbnail").length){
+    if(localStorage.getItem("ProfilePic")){
       var imgURL = localStorage.getItem("ProfilePic");
       document.getElementById("profileThumbnail").src = imgURL;
     }
