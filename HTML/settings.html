@@ -92,7 +92,12 @@
 <script>
   function setProfilePic() {
     var imgURL = document.getElementById("url").value;
-    localStorage.setItem("ProfilePic", imgURL);
+    if(imgURL.length) {
+      localStorage.setItem("ProfilePic", imgURL);
+    }
+    else {
+        alert("Can't have a blank profile picture!");
+    }
   }
 </script>
 <script>

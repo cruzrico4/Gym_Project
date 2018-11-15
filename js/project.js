@@ -41,6 +41,7 @@ function setTheme() {
       document.documentElement.style.setProperty('--grd-color', '#4D6B85');
       document.documentElement.style.setProperty('--pg-color', 'white');
       document.documentElement.style.setProperty('--txt-color', 'black');
+      document.documentElement.style.setProperty('--sec-txt-color', 'gray');
       document.documentElement.style.setProperty('--hvr-color', '#5E88AD');
 
       try {
@@ -53,6 +54,7 @@ function setTheme() {
       document.documentElement.style.setProperty('--grd-color', '#121212');
       document.documentElement.style.setProperty('--pg-color', 'black');
       document.documentElement.style.setProperty('--txt-color', '#949393');
+      document.documentElement.style.setProperty('--sec-txt-color', '#6F6F6F');
       document.documentElement.style.setProperty('--hvr-color', '#606060');
 
       try {
@@ -65,6 +67,7 @@ function setTheme() {
       document.documentElement.style.setProperty('--grd-color', '#16253B');
       document.documentElement.style.setProperty('--pg-color', '#006A96');
       document.documentElement.style.setProperty('--txt-color', '#C69214');
+      document.documentElement.style.setProperty('--sec-txt-color', '#B98E23');
       document.documentElement.style.setProperty('--hvr-color', '#006A96');
 
       try {
@@ -80,6 +83,14 @@ $(document).ready(function() {
         $("#profilePicArrow").toggleClass('flip');
 
         $("#profilePicOptions").toggleClass('drop');
+    });
+});
+
+$(document).ready(function() {
+    $( "#drop1.toggle" ).click( function() {
+        $("#dropArrow1").toggleClass('flip');
+
+        $("#dropArrow1Options").toggleClass('drop');
     });
 });
 
@@ -100,11 +111,6 @@ var username = localStorage.getItem("username");
 var exists = $('#username').length;
 if(username&&exists) {
     document.getElementById("username").innerHTML = username;
-}
-
-function generateGradientColor(bgColor){
-  var bgHex = (parseInt(bgColor, 16) + parseInt("0f0f0f",16)).toString(16);
-  document.documentElement.style.setProperty('--grd-color', bgHex);
 }
 
 window.onload = setTheme();
