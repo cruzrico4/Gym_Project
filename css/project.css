@@ -4,7 +4,7 @@
 	--clk-color:"#406280";
 	--grd-color:"#4D6B85";
 	--txt-color:black;
-	--sec-txt-color:gray;
+	--sec-txt-color:black;
 	--hvr-color:"#5E88AD";
 }
 
@@ -318,19 +318,21 @@ text {
 /* Style the navigation links */
 #myMenu li a {
   background-color: #f6f6f6;
-	color: var(--txt-color);
+	color: var(--sec-txt-color);
   padding: 12px;
   text-decoration: none;
   font-size: 18px;
-  display: block
+  display: block;
 }
 
 #myMenu li a:hover {
+	color: var(--txt-color);
   background-color: var(--hvr-color);
+	background-image: linear-gradient(var(--hvr-color), var(--grd-color));
 }
 
 #myMenu li a:active {
-  background-color: var(--clk-color);
+	background-image: linear-gradient(var(--clk-color), var(--grd-color));
 }
 
 .flip {

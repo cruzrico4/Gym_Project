@@ -43,7 +43,7 @@ function setTheme() {
       document.documentElement.style.setProperty('--clk-color', '#406280');
       document.documentElement.style.setProperty('--pg-color', 'white');
       document.documentElement.style.setProperty('--txt-color', 'black');
-      document.documentElement.style.setProperty('--sec-txt-color', 'gray');
+      document.documentElement.style.setProperty('--sec-txt-color', 'black');
       document.documentElement.style.setProperty('--hvr-color', '#5E88AD');
 
       try {
@@ -68,6 +68,7 @@ function setTheme() {
     else if(theme=="triton") {
       document.documentElement.style.setProperty('--bg-color', '#182B49');
       document.documentElement.style.setProperty('--grd-color', '#16253B');
+      document.documentElement.style.setProperty('--clk-color', '#17263F');
       document.documentElement.style.setProperty('--pg-color', '#006A96');
       document.documentElement.style.setProperty('--txt-color', '#C69214');
       document.documentElement.style.setProperty('--sec-txt-color', '#B98E23');
@@ -84,7 +85,7 @@ function setTheme() {
       document.documentElement.style.setProperty('--clk-color', '#406280');
       document.documentElement.style.setProperty('--pg-color', 'white');
       document.documentElement.style.setProperty('--txt-color', 'black');
-      document.documentElement.style.setProperty('--sec-txt-color', 'gray');
+      document.documentElement.style.setProperty('--sec-txt-color', 'black');
       document.documentElement.style.setProperty('--hvr-color', '#5E88AD');
     }
 
