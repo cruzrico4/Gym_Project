@@ -49,7 +49,7 @@
         <div id="profileUnderline" class="titleUnderline container"></div>
         <form>
           <span class="dropOption">Image URL:</span>
-          <input id="url" class="textField" type="text" value="">
+          <input id="url" onClick="this.select();" class="textField" type="text" value="">
           <a class="button button-small" onClick="setProfilePic()">Submit</a>
       </div>
     <h2 id="colorTheme" class="toggle setting"><img id="themeArrow" class="dropArrow" src="../images/drop_arrow.png">Change Theme</h2>
@@ -94,6 +94,7 @@
     var imgURL = document.getElementById("url").value;
     if(imgURL.length) {
       localStorage.setItem("ProfilePic", imgURL);
+      setTheme();
     }
     else {
         alert("Can't have a blank profile picture!");

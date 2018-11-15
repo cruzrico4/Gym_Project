@@ -30,15 +30,17 @@ function searchableMenu() {
 function setTheme() {
 
     /*Set Profile Picture*/
+    if($("#profileThumbnail").length){
       var imgURL = localStorage.getItem("ProfilePic");
       document.getElementById("profileThumbnail").src = imgURL;
-
+    }
     var theme = localStorage.getItem("Theme");
     var arrows = $('.dropArrow');
 
     if(theme=="classic") {
       document.documentElement.style.setProperty('--bg-color', '#4B7498');
       document.documentElement.style.setProperty('--grd-color', '#4D6B85');
+      document.documentElement.style.setProperty('--clk-color', '#406280');
       document.documentElement.style.setProperty('--pg-color', 'white');
       document.documentElement.style.setProperty('--txt-color', 'black');
       document.documentElement.style.setProperty('--sec-txt-color', 'gray');
@@ -52,6 +54,7 @@ function setTheme() {
     if(theme=="dark") {
       document.documentElement.style.setProperty('--bg-color', '#252525');
       document.documentElement.style.setProperty('--grd-color', '#121212');
+      document.documentElement.style.setProperty('--clk-color', '#171717');
       document.documentElement.style.setProperty('--pg-color', 'black');
       document.documentElement.style.setProperty('--txt-color', '#949393');
       document.documentElement.style.setProperty('--sec-txt-color', '#6F6F6F');
