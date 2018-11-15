@@ -38,7 +38,7 @@ function setTheme() {
 
     if(theme=="classic") {
       document.documentElement.style.setProperty('--bg-color', '#4B7498');
-      document.documentElement.style.setProperty('--grd-color', '#4E6E8A');
+      document.documentElement.style.setProperty('--grd-color', '#4D6B85');
       document.documentElement.style.setProperty('--pg-color', 'white');
       document.documentElement.style.setProperty('--txt-color', 'black');
       document.documentElement.style.setProperty('--hvr-color', '#5E88AD');
