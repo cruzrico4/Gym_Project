@@ -30,6 +30,7 @@ function searchableMenu() {
 function setTheme() {
 
     var theme = localStorage.getItem("Theme");
+    var arrows = $('.dropArrow');
 
     if(theme=="classic") {
       document.documentElement.style.setProperty('--bg-color', '#4B7498');
@@ -37,7 +38,9 @@ function setTheme() {
       document.documentElement.style.setProperty('--pg-color', 'white');
       document.documentElement.style.setProperty('--txt-color', 'black');
       document.documentElement.style.setProperty('--hvr-color', '#5E88AD');
-      
+
+      for(i in arrows)
+        arrows[i].style.filter = "invert(0)";
     }
     if(theme=="dark") {
       document.documentElement.style.setProperty('--bg-color', '#252525');
@@ -46,6 +49,8 @@ function setTheme() {
       document.documentElement.style.setProperty('--txt-color', '#949393');
       document.documentElement.style.setProperty('--hvr-color', '#606060');
 
+      for(i in arrows)
+        arrows[i].style.filter = "invert(1)";
     }
     if(theme=="triton") {
       document.documentElement.style.setProperty('--bg-color', '#182B49');
@@ -53,6 +58,9 @@ function setTheme() {
       document.documentElement.style.setProperty('--pg-color', '#006A96');
       document.documentElement.style.setProperty('--txt-color', '#C69214');
       document.documentElement.style.setProperty('--hvr-color', '#006A96');
+
+      for(i in arrows)
+        arrows[i].style.filter = "invert(0)";
     }
 }
 

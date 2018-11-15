@@ -75,7 +75,7 @@ h2 {
 	font-size:20pt;
 	width:350px;
 	border-radius: 10px;
-	padding:30px;
+	padding:20px;
 }
 
 .button:hover {
@@ -223,29 +223,14 @@ h2 {
 	padding: 0;
 }
 
-.toPainMenu {
-	position: relative;
-	text-align: center;
-	font-size:20pt;
-	margin-top:10px;
-	margin-bottom: 10px;
-	margin-left: auto;
-	margin-right: auto;;
-	display: flex;
-	padding:30px;
-	color:var(--txt-color);
-}
-
 .toInstructions{
 	position: relative;
 	text-align: center;
-	font-size:20pt;
 	margin-top:10px;
 	margin-bottom: 10px;
 	margin-left: 3%;
 	margin-right: 3%;
 	display: inline-block;
-	padding:30px;
 	color:var(--txt-color);
 }
 
