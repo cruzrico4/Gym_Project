@@ -37,7 +37,7 @@ function setTheme() {
       document.documentElement.style.setProperty('--pg-color', 'white');
       document.documentElement.style.setProperty('--txt-color', 'black');
       document.documentElement.style.setProperty('--hvr-color', '#5E88AD');
-
+      
     }
     if(theme=="dark") {
       document.documentElement.style.setProperty('--bg-color', '#252525');
