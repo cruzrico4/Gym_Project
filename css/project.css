@@ -28,6 +28,7 @@ body {
 	background-color:var(--pg-color);
 }
 
+
 h1 {
 	font-size:36pt;
 	color:var(--txt-color);
@@ -162,7 +163,7 @@ h2 {
 }
 
 .titleUnderline {
-	background-color:#000000;
+	background-color:var(--txt-color);
 	height:1px;
 	width:300px;
 	margin-bottom:10px;
@@ -186,7 +187,6 @@ h2 {
 	width:350px;
 	padding:30px;
 	color:var(--txt-color);
-
 }
 
 .toPainMenu {
@@ -274,6 +274,7 @@ h2 {
 /* Style the navigation links */
 #myMenu li a {
   background-color: #f6f6f6;
+	color: var(--txt-color);
   padding: 12px;
   text-decoration: none;
   font-size: 18px;

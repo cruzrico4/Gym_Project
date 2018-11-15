@@ -25,6 +25,34 @@ function searchableMenu() {
     }
 }
 
+
+
+function setTheme() {
+
+    var theme = localStorage.getItem("Theme");
+
+    if(theme=="classic") {
+      document.documentElement.style.setProperty('--bg-color', '#3a4860');
+      document.documentElement.style.setProperty('--pg-color', 'white');
+      document.documentElement.style.setProperty('--txt-color', 'black');
+      document.documentElement.style.setProperty('--hvr-color', '#515F77');
+
+    }
+    if(theme=="dark") {
+      document.documentElement.style.setProperty('--bg-color', '#252525');
+      document.documentElement.style.setProperty('--pg-color', 'black');
+      document.documentElement.style.setProperty('--txt-color', '#949393');
+      document.documentElement.style.setProperty('--hvr-color', '#606060');
+
+    }
+    if(theme=="triton") {
+      document.documentElement.style.setProperty('--bg-color', '#182B49');
+      document.documentElement.style.setProperty('--pg-color', '#006A96');
+      document.documentElement.style.setProperty('--txt-color', '#C69214');
+      document.documentElement.style.setProperty('--hvr-color', '#006A96');
+    }
+}
+
 $(document).ready(function() {
     $( "#profilePic.toggle" ).click( function() {
         $("#profilePicArrow").toggleClass('flip');
@@ -50,3 +78,5 @@ var username = localStorage.getItem("username");
 if(username) {
     document.getElementById("username").innerHTML = username;
 }
+
+window.onload = setTheme();

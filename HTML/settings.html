@@ -51,15 +51,15 @@
     <div id="themeOptions" class="dropMenu">
       <form>
         <label id="classic" class="dropOption">
-          <input type="radio" name="theme" value="Classic" checked> <span class="dropOption">Classic</span>
+          <input id="classicInput" type="radio" name="theme" value="Classic" checked> <span class="dropOption">Classic</span>
         </label>
         <br>
         <label id="dark" class="dropOption">
-          <input type="radio" name="theme" value="Dark"> <span class="dropOption">Dark</span>
+          <input id="darkInput" type="radio" name="theme" value="Dark"> <span class="dropOption">Dark</span>
         </label>
         <br>
         <label id="triton" class="dropOption">
-          <input type="radio" name="theme" value="Triton"> <span class="dropOption">Triton</span>
+          <input id="tritonInput" type="radio" name="theme" value="Triton"> <span class="dropOption">Triton</span>
         </label>
     </div>
 </div>
@@ -71,24 +71,22 @@
 
 <script>
   $("#classic").click(function() {
-    document.documentElement.style.setProperty('--bg-color', '#3a4860');
-    document.documentElement.style.setProperty('--pg-color', 'white');
-    document.documentElement.style.setProperty('--txt-color', 'black');
-    document.documentElement.style.setProperty('--hvr-color', '#515F77');
-
+    localStorage.setItem("Theme", "classic");
+    setTheme();
   });
   $("#dark").click(function() {
-    document.documentElement.style.setProperty('--bg-color', '#252525');
-    document.documentElement.style.setProperty('--pg-color', 'black');
-    document.documentElement.style.setProperty('--txt-color', '#949393');
-    document.documentElement.style.setProperty('--hvr-color', '#606060');
-
+    localStorage.setItem("Theme", "dark");
+    setTheme();
   });
   $("#triton").click(function() {
-    document.documentElement.style.setProperty('--bg-color', '#182B49');
-    document.documentElement.style.setProperty('--pg-color', '#006A96');
-    document.documentElement.style.setProperty('--txt-color', '#C69214');
+    localStorage.setItem("Theme", "triton");
+    setTheme();
   });
+</script>
+
+<script>
+  var theme = localStorage.getItem("Theme");
+  document.getElementById(theme).click();
 </script>
 
 </body>
