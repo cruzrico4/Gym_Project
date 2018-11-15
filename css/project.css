@@ -10,10 +10,11 @@
 }
 
 :root {
-	--pg-color:white;
-	--bg-color: #3a4860;
-	--txt-color:#000000;
-	--hvr-color:#515F77;
+	--pg-color;
+	--bg-color;
+	--grd-color;
+	--txt-color;
+	--hvr-color;
 }
 
 /* this style exists to make it obvious that you've successfully linked
@@ -22,6 +23,10 @@ html {
 	font-family:sans-serif;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
+}
+
+a {
+	white-space: nowrap;
 }
 
 body {
@@ -43,6 +48,41 @@ h2 {
 	color:var(--txt-color);
 	padding:8px;
 	margin:0px;
+}
+
+#buttonContainer {
+	margin-top:50px;
+}
+
+.button {
+	cursor:pointer;
+	border: 1px black solid;
+	display:inline-block;
+	background-color: var(--bg-color);
+	margin:10px 10px 10px 10px;
+	background-image: linear-gradient(var(--bg-color), var(--grd-color));
+	color:var(--txt-color);
+}
+
+.button-small {
+	font-size:20px;
+	width: 150px;
+	border-radius: 5px;
+	padding:10px;
+}
+
+.button-large {
+	font-size:20pt;
+	width:350px;
+	border-radius: 10px;
+	padding:30px;
+}
+
+.button:hover {
+	color: var(--txt-color);
+	text-decoration: none;
+	background-color: var(--hvr-color);
+	background-image: linear-gradient(var(--hvr-color), var(--grd-color));
 }
 
 .topBar {
@@ -107,8 +147,9 @@ h2 {
 	height:50px;
 }
 
-.icon .homeButton {
+.icon #homeButton {
 	position:absolute;
+
 }
 
 .profileThumbnail {
@@ -174,19 +215,12 @@ h2 {
 	position:relative;
 	top:60px;
 }
+
 .pageItems {
-	margin-top: 20%;
+	position: relative;
 	text-align:center;
 	color:var(--txt-color);
 	padding: 0;
-}
-
-.homeOptions {
-	font-size:20pt;
-	margin:10px;
-	width:350px;
-	padding:30px;
-	color:var(--txt-color);
 }
 
 .toPainMenu {

@@ -16,7 +16,7 @@
   <!-- TOP BAR HTML -->
   <div class="topBar" id="topBar">
       <img id="menuButton" class="icon" src="../images/menu_btn.png" onClick="showSideMenu()" />
-      <a id="homeButton" href="home.html"><img class="icon homeButton" src="../images/home_btn.png" /></a>
+      <a id="homeButton" href="home.html"><img class="icon" src="../images/home_btn.png" /></a>
   </div>
 
 
@@ -41,12 +41,14 @@
   <!-- PAGE HTML -->
 
   <div class="container page">
-    <ul class="pageItems">
+      <div class="pageItems">
       <h1>What would you like to do?</h1>
       <div class="container titleUnderline"></div>
-      <col><a class="btn btn-default homeOptions" href="techniqueAssistant/techniqueAssistantMenu.html">Learn new exercises</a></col>
-      <col><a class="btn btn-default homeOptions" href="painInfo/painMenu.html">Get Pain Information</a></col>
-    </ul>
+      <div id="buttonContainer">
+        <a class="button button-large" href="techniqueAssistant/techniqueAssistantMenu.html">Learn new exercises</a>
+        <a class="button button-large" href="painInfo/painMenu.html">Get Pain Information</a>
+      </div>
+    </div>
   </div>
   <!-- END PAGE HTML -->
 

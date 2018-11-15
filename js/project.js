@@ -32,14 +32,16 @@ function setTheme() {
     var theme = localStorage.getItem("Theme");
 
     if(theme=="classic") {
-      document.documentElement.style.setProperty('--bg-color', '#3a4860');
+      document.documentElement.style.setProperty('--bg-color', '#4B7498');
+      document.documentElement.style.setProperty('--grd-color', '#4E6E8A');
       document.documentElement.style.setProperty('--pg-color', 'white');
       document.documentElement.style.setProperty('--txt-color', 'black');
-      document.documentElement.style.setProperty('--hvr-color', '#515F77');
+      document.documentElement.style.setProperty('--hvr-color', '#5E88AD');
 
     }
     if(theme=="dark") {
       document.documentElement.style.setProperty('--bg-color', '#252525');
+      document.documentElement.style.setProperty('--grd-color', '#121212');
       document.documentElement.style.setProperty('--pg-color', 'black');
       document.documentElement.style.setProperty('--txt-color', '#949393');
       document.documentElement.style.setProperty('--hvr-color', '#606060');
@@ -47,6 +49,7 @@ function setTheme() {
     }
     if(theme=="triton") {
       document.documentElement.style.setProperty('--bg-color', '#182B49');
+      document.documentElement.style.setProperty('--grd-color', '#16253B');
       document.documentElement.style.setProperty('--pg-color', '#006A96');
       document.documentElement.style.setProperty('--txt-color', '#C69214');
       document.documentElement.style.setProperty('--hvr-color', '#006A96');
@@ -75,8 +78,14 @@ function setExercise(exerciseName){
 
 /** Start User data Code **/
 var username = localStorage.getItem("username");
-if(username) {
+var exists = $('#username').length;
+if(username&&exists) {
     document.getElementById("username").innerHTML = username;
+}
+
+function generateGradientColor(bgColor){
+  var bgHex = (parseInt(bgColor, 16) + parseInt("0f0f0f",16)).toString(16);
+  document.documentElement.style.setProperty('--grd-color', bgHex);
 }
 
 window.onload = setTheme();
