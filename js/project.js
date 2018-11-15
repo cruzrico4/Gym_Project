@@ -78,6 +78,15 @@ function setTheme() {
         arrows[i].style.filter = "invert(0)";
       } catch(err){}
     }
+    else {
+      document.documentElement.style.setProperty('--bg-color', '#4B7498');
+      document.documentElement.style.setProperty('--grd-color', '#4D6B85');
+      document.documentElement.style.setProperty('--clk-color', '#406280');
+      document.documentElement.style.setProperty('--pg-color', 'white');
+      document.documentElement.style.setProperty('--txt-color', 'black');
+      document.documentElement.style.setProperty('--sec-txt-color', 'gray');
+      document.documentElement.style.setProperty('--hvr-color', '#5E88AD');
+    }
 
 }
 
