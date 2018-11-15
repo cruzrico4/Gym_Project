@@ -1,11 +1,11 @@
 :root {
-	--pg-color;
-	--bg-color;
-	--clk-color;
-	--grd-color;
-	--txt-color;
-	--sec-txt-color;
-	--hvr-color;
+	--pg-color:white;
+	--bg-color:"#4B7498";
+	--clk-color:"#406280";
+	--grd-color:"#4D6B85";
+	--txt-color:black;
+	--sec-txt-color:gray;
+	--hvr-color:"#5E88AD";
 }
 
 /* this style exists to make it obvious that you've successfully linked
