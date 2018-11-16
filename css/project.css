@@ -45,6 +45,7 @@ h3 {
 
 figcaption {
 	font-size:12pt;
+	margin-top:5px;
 	color:var(--sec-txt-color);
 }
 
