@@ -375,3 +375,10 @@ text {
 .ExDetail-descriptionStep {
     margin-bottom: .8em;
 }
+
+.bodypart {
+	display: block;
+	color: yellow;
+	outline-style: solid;
+	outline-color: black;
+}
