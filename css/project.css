@@ -14,6 +14,7 @@ html {
 	font-family:sans-serif;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
+			overflow: hidden;
 }
 
 a {
@@ -22,6 +23,7 @@ a {
 
 body {
 	background-color:var(--pg-color);
+	height: 100rem;
 }
 
 h1 {
@@ -243,6 +245,8 @@ text {
 	background-color:var(--pg-color);
 	position:relative;
 	top:60px;
+	height: 100%;
+	overflow: hidden;
 }
 
 .pageItems {
@@ -374,11 +378,4 @@ text {
 
 .ExDetail-descriptionStep {
     margin-bottom: .8em;
-}
-
-.bodypart {
-	display: block;
-	color: yellow;
-	outline-style: solid;
-	outline-color: black;
 }
