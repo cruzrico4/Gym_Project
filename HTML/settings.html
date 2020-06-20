@@ -22,14 +22,17 @@
 
   <div class="sideMenu" id="sideMenu">
     <a class="closeButton" onClick="hideSideMenu()">&times</a>
-    <a class="menuHeader" href="#"><img class="profileThumbnail" src="../images/profile_pic.png" alt="Profile Picture" /> Username</a>
+    <div>
+      <img id="profileThumbnail" class="profileThumbnail" src="../images/profile_pic.png" alt="Profile Picture" />
+      <span id="username" class="menuHeader" style="top:0px"> Username</span>
+    </div>
     <div class="divider"></div>
 
     <!-- COMMENTED OUT FOR A4-->
     <!-- a class="menuOption" href="#" onClick="rotateArrow()"><img class="dropArrow" id=favoritesArrow src="../../images/drop_arrow.png" />Favorites</a -->
 
-    <a class="menuOption" href="../settings.html">Settings</a>
-    <a class="menuOption" href="index.html">Logout</a>
+    <a class="menuOption" href="settings.html">Settings</a>
+    <a class="menuOption" href="../index.html">Logout</a>
   </div>
 
 
@@ -37,14 +40,71 @@
 
   <!-- PAGE HTML -->
 
-  <div class="page">
-    <<p>Wow a settings page</p>
-  </div>
+  <div class="container page">
+    <h1>Settings</h1>
+    <div class="container titleUnderline"></div>
+    <h2 id="profilePic" class="toggle setting"><img id="profilePicArrow" class="dropArrow" src="../images/drop_arrow.png">Profile Picture</h2>
+      <div id="profilePicOptions" class="dropMenu">
+        <h2>Set your profile picture with a link to a picture</h2>
+        <div id="profileUnderline" class="titleUnderline container"></div>
+        <form>
+          <span class="dropOption">Image URL:</span>
+          <input id="url" onClick="this.select();" class="textField" type="text" value="">
+          <a class="button button-small" onClick="setProfilePic()">Submit</a>
+      </div>
+    <h2 id="colorTheme" class="toggle setting"><img id="themeArrow" class="dropArrow" src="../images/drop_arrow.png">Change Theme</h2>
+    <div id="themeOptions" class="dropMenu">
+      <form>
+        <label id="classic" class="dropOption">
+          <input id="classicInput" type="radio" name="theme" value="Classic" checked> <span class="dropOption">Classic</span>
+        </label>
+        <br>
+        <label id="dark" class="dropOption">
+          <input id="darkInput" type="radio" name="theme" value="Dark"> <span class="dropOption">Dark</span>
+        </label>
+        <br>
+        <label id="triton" class="dropOption">
+          <input id="tritonInput" type="radio" name="theme" value="Triton"> <span class="dropOption">Triton</span>
+        </label>
+    </div>
+</div>
   <!-- END PAGE HTML -->
-
 
 <script src="https://code.jquery.com/jquery.js"></script>
 <script src="../js/bootstrap.min.js"></script>
 <script src="../js/project.js"></script>
+
+<script>
+  $("#classic").click(function() {
+    localStorage.setItem("Theme", "classic");
+    setTheme();
+  });
+  $("#dark").click(function() {
+    localStorage.setItem("Theme", "dark");
+    setTheme();
+  });
+  $("#triton").click(function() {
+    localStorage.setItem("Theme", "triton");
+    setTheme();
+  });
+</script>
+
+<script>
+  function setProfilePic() {
+    var imgURL = document.getElementById("url").value;
+    if(imgURL.length) {
+      localStorage.setItem("ProfilePic", imgURL);
+      setTheme();
+    }
+    else {
+        alert("Can't have a blank profile picture!");
+    }
+  }
+</script>
+<script>
+  var theme = localStorage.getItem("Theme");
+  document.getElementById(theme).click();
+</script>
+
 </body>
 </html>

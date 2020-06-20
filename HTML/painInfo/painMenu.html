@@ -22,7 +22,10 @@
 
   <div class="sideMenu" id="sideMenu">
     <a class="closeButton" onClick="hideSideMenu()">&times</a>
-    <a class="menuHeader" href="#"><img class="profileThumbnail" src="../../images/profile_pic.png" alt="Profile Picture" /> Username</a>
+    <div>
+      <img id="profileThumbnail" class="profileThumbnail" src="../../images/profile_pic.png" alt="Profile Picture" />
+      <span id="username" class="menuHeader" style="top:0px"> Username</span>
+    </div>
     <div class="divider"></div>
     <a class="menuOption" href="#" onClick="rotateArrow()"><img class="dropArrow" id=favoritesArrow src="../../images/drop_arrow.png" />Favorites</a>
     <a class="menuOption" href="#" onClick="rotateArrow()"><img class="dropArrow" id=settingsArrow src="../../images/drop_arrow.png" />Settings</a>
@@ -35,15 +38,16 @@
 
 <!-- search menu -->
 <div class="mhleft page">
-  <h1>Pain Information<h1>
+  <h1>Pain Information</h1>
+  <div class="container titleUnderline"></div>
   <input type="text" id="mySearch" onkeyup="searchableMenu()" placeholder="Search for an exercise..." title="Type in a category">
 
   <ul class="pageItems" id="myMenu">
     <li><a onclick="setExercise('squats')" href="chooseBodyPart.html">Squats</a></li>
     <li><a onclick="setExercise('deadlift')" href="chooseBodyPart.html">Deadlift</a></li>
-    <li><a onclick="setExercise('situp')" href="chooseBodyPart.html">Sit-up</a></li>
+    <!--li><a onclick="setExercise('situp')" href="chooseBodyPart.html">Sit-up</a></li>
     <li><a onclick="setExercise('lunges')" href="chooseBodyPart.html">Lunges</a></li>
-    <li><a onclick="setExercise('plank')" href="chooseBodyPart.html">Plank</a></li>
+    <li><a onclick="setExercise('plank')" href="chooseBodyPart.html">Plank</a></li-->
     <li><a onclick="setExercise('benchpress')" href="chooseBodyPart.html">Bench Press</a></li>
     <li><a onclick="setExercise('bentoverrow')" href="chooseBodyPart.html">Bent-Over Rows</a></li>
   </ul>

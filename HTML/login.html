@@ -1,0 +1,70 @@
+<!doctype html>
+
+<html>
+<head>
+  <title>Gym App - Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap -->
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/bootstrap-theme.min.css" rel="stylesheet">
+  <link href="../css/project.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="topBar">
+  </div>
+  <div class="container page">
+    <ul class="pageItems">
+      <h1>Log In</h1>
+      <div class="container titleUnderline"></div>
+      <form action="home.html"> <!-- CHANGE TO save_user.html LATER? -->
+        <span>Username:</span>
+        <input id="user" class="textField" required type="text" name="username">
+        <br>
+        <span>Password:</span>
+        <input id="pass" class="textField" required type="password" name="password">
+        <br>
+        <div>
+          <a id="submit" onClick="checkUser()" class="button button-small">Submit</a>
+          <a class="button button-small" href="../index.html">Cancel</a>
+        </div>
+      </form>
+    </ul>
+  </div>
+
+<script>
+//Store user data
+function checkUser(){
+  var user = document.getElementById("user").value;
+  var pass = document.getElementById("pass").value;
+  if(user==localStorage.getItem("username") && pass==localStorage.getItem("password")){
+    window.location.href = "home.html";
+  }
+  else if(user!=localStorage.getItem("username")) {
+    alert("User not found!");
+  } else {
+    alert("Incorrect password!");
+  }
+}
+</script>
+
+<script>
+//Add enter listener (login form doesn't use submit input)
+  document.querySelector('#pass').addEventListener('keypress', function(e) {
+    if(e.key == 'Enter') {
+      checkUser();
+    }
+  });
+  document.querySelector('#user').addEventListener('keypress', function(e) {
+    if(e.key == 'Enter') {
+      checkUser();
+    }
+  });
+</script>
+
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="../js/project.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+</body>
+</html>

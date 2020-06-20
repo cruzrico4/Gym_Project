@@ -22,25 +22,54 @@
 
   <div class="sideMenu" id="sideMenu">
     <a class="closeButton" onClick="hideSideMenu()">&times</a>
-    <a class="menuHeader" ><img class="profileThumbnail" src="../../../images/profile_pic.png" alt="Profile Picture" /> Username</a>
+    <div>
+      <img id="profileThumbnail" class="profileThumbnail" src="../../../images/profile_pic.png" alt="Profile Picture" />
+      <span id="username" class="menuHeader" style="top:0px"> Username</span>
+    </div>
     <div class="divider"></div>
 
     <!-- COMMENTED OUT FOR A4-->
     <!-- a class="menuOption" href="#" onClick="rotateArrow()"><img class="dropArrow" id=favoritesArrow src="../../images/drop_arrow.png" />Favorites</a -->
 
     <a class="menuOption" href="../../settings.html">Settings</a>
-    <a class="menuOption" href="../../index.html">Logout</a>
+    <a class="menuOption" href="../../../index.html">Logout</a>
   </div>
 
 
   <!-- END TOP BAR HTML -->
 
   <!-- PAGE HTML -->
-  <div class="page">
-    <h2>Advice and an instructional video for the chosen exercise</h2>
-    <!-- hiding workoutPlanner for later implementation as stretch goal <div>
-      <a class="btn btn-default btn-lg pageItem" href="workoutPlanner/workoutPlannerHome.html">Workout Planner</a>
-    </div>-->
+  <div class="container-fluid">
+    <h1>*</h1>
+    <div class="row">
+      <div class="col-sm-9">
+        <h1> Addressing knee pain with Bent-Over Rows </h1>
+          <div>
+            <figure>
+              <img src="https://cdn.stronglifts.com/wp-content/uploads/deadlift-feet.jpg" class="center">
+              <figcaption class="center"></figcaption>
+            </figure>
+          </div>
+        <h2 id="drop1" class="toggle setting"><img id="dropArrow1" class="dropArrow" src="../../../images/drop_arrow.png">Advice</h2>
+          <div id="dropArrow1Options" class="dropMenu">
+            <ul class="ExDetail-descriptionSteps">
+              <li class="ExDetail-descriptionStep">The bar will hit your knees if you put it too close to your shins. The proper way to setup for Barbell Rows is with the bar over your mid-foot. This is your balance point. Moving the bar over your mid-foot is the shortest way up, the most effective way to Barbell Row and stops the bar from hitting your shins. Setup with the bar over the middle of your foot. If it touches your shins when you stand in front it or bend over, you’re too close.</li>
+              <li class="ExDetail-descriptionStep">Point your toes in the same direction as your knees. Your knees should point out, to the side, when you Barbell Row. They can’t point forward or you’ll hit your them with the bar. Push your knees out to keep them out of the bar path. Point your toes out as well to make this easier. You’ll stop hitting your knees and shins with the bar when you Barbell Row </li>
+            </ul>
+          </div>
+    </div>
+    <div class="col-sm-3">
+      <h2 class="center"> Want to go over the instructions for this exercise again? </h2>
+      <div class="centeringBox">
+        <a class="button button-large toInstructions" href="../../techniqueAssistant/exercises/bentoverrow.html">bentoverrow Instructions</a>
+      </div>
+      <h2 class="center"> Still in pain after following this advice?</h2>
+      <h3 class="center"> Try another exercise that works similar muscles: </h3>
+      <div class="centeringBox">
+        <a class="button button-large toInstructions" href="../../techniqueAssistant/exercises/benchpress.html">Bench Press Instructions</a>
+      </div>
+
+    </div>
   </div>
   <!-- END PAGE HTML -->
 

@@ -22,25 +22,57 @@
 
   <div class="sideMenu" id="sideMenu">
     <a class="closeButton" onClick="hideSideMenu()">&times</a>
-    <a class="menuHeader" ><img class="profileThumbnail" src="../../../images/profile_pic.png" alt="Profile Picture" /> Username</a>
+    <div>
+      <img id="profileThumbnail" class="profileThumbnail" src="../../../images/profile_pic.png" alt="Profile Picture" />
+      <span id="username" class="menuHeader" style="top:0px"> Username</span>
+    </div>
     <div class="divider"></div>
 
     <!-- COMMENTED OUT FOR A4-->
     <!-- a class="menuOption" href="#" onClick="rotateArrow()"><img class="dropArrow" id=favoritesArrow src="../../images/drop_arrow.png" />Favorites</a -->
 
     <a class="menuOption" href="../../settings.html">Settings</a>
-    <a class="menuOption" href="../../index.html">Logout</a>
+    <a class="menuOption" href="../../../index.html">Logout</a>
   </div>
 
 
   <!-- END TOP BAR HTML -->
 
   <!-- PAGE HTML -->
-  <div class="page">
-    <h2>Advice and an instructional video for the chosen exercise</h2>
-    <!-- hiding workoutPlanner for later implementation as stretch goal <div>
-      <a class="btn btn-default btn-lg pageItem" href="workoutPlanner/workoutPlannerHome.html">Workout Planner</a>
-    </div>-->
+  <div class="container-fluid">
+  <h1>*</h1>
+    <div class="row">
+      <div class="col-sm-9">
+        <h1> Addressing Lower Back Pain with Squatting </h1>
+          <div>
+            <figure>
+              <img src="https://cdn.stronglifts.com/wp-content/uploads/squat-lower-back.jpg" class="center">
+              <figcaption class="center"></figcaption>
+            </figure>
+          </div>
+        <h2 id="drop1" class="toggle setting"><img id="dropArrow1" class="dropArrow" src="../../../images/drop_arrow.png">Advice</h2>
+          <div id="dropArrow1Options" class="dropMenu">
+            <ul class="ExDetail-descriptionSteps">
+              <li class="ExDetail-descriptionStep">Squats cause back pain if you fail to keep your lower back neutral. Rounding or excess arching compresses your lower back discs and can herniate them. Rotation or uneven loading of your spine is also bad. You must maintain a natural arch when you Squat. And your pelvis must stay neutral with the floor.</li>
+              <li class="ExDetail-descriptionStep">Lower back rounding you fix by pushing your knees out and not Squatting too low. Break parallel and come back up, don’t go ass-to-grass.</li>
+              <li class="ExDetail-descriptionStep">Excess lower back arching you fix by keeping your ribcage down and squeezing your abs.</li>
+              <li class="ExDetail-descriptionStep">During your Squat, avoid excess forward lean. Keep the bar balanced over your mid-foot. Don’t let it move up your spine, over your toes, or it will pull you forward. Squeeze your upper-back tight so the bar can’t move. Squat up by moving your hips and chest up at the same time. Maintain your back angle on the way up. Don’t let your hips rise faster than your chest or your torso will end too horizontal and stress your back.</li>
+              <li class="ExDetail-descriptionStep">Proper breathing is crucial to avoid lower back pain on the Squat. You must take a big breath and hold it before you Squat down. You must keep holding it on the way down until you come back up. Don’t exhale on the way down or at the bottom. This empties your lungs and releases tension in your torso. It puts your lower back at risk. Take a big breath and hold it so you stay tight. This increases lower back support and safety.</li>
+            </ul>
+          </div>
+    </div>
+    <div class="col-sm-3">
+      <h2 class="center"> Want to go over the instructions for this exercise again? </h2>
+      <div class="centeringBox">
+        <a class="button button-large toInstructions" href="../../techniqueAssistant/exercises/squats.html">Squat Instructions</a>
+      </div>
+      <h2 class="center"> Still in pain after following this advice?</h2>
+      <h3 class="center"> Try another exercise that works similar muscles: </h3>
+      <div class="centeringBox">
+        <a class="button button-large toInstructions" href="../../techniqueAssistant/exercises/lunges.html">Lunge Instructions</a>
+      </div>
+
+    </div>
   </div>
   <!-- END PAGE HTML -->
 

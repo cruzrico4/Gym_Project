@@ -12,25 +12,40 @@
 </head>
 
 <body>
-  <div id="userField">
-    <form action="home.html"> <!-- CHANGE TO save_user.html LATER -->
-      Username:
-      <br>
-      <input class="textField" type="text" name="username">
-      <br>
-      Password:
-      <br>
-      <input class="textField" type="password" name="password">
-      <br>
-      <div>
-      <input class="btn btn-default btn-sm" type="submit" value="Submit" href = "home.html">
-      <a class="btn btn-default btn-sm" href="index.html">Cancel</a>
-    </form>
+  <div class="topBar">
+  </div>
+  <div class="container page">
+    <ul class="pageItems">
+      <h1>Create User</h1>
+      <div class="container titleUnderline"></div>
+      <form action="home.html"> <!-- CHANGE TO save_user.html LATER -->
+        <span>Username:</span>
+        <input id="user" class="textField" required type="text" name="username" value="">
+        <br>
+        <span>Password:</span>
+        <input id="pass" class="textField" required type="password" name="password" value="">
+        <br>
+        <div>
+          <input id="submit" onClick="store()" class="button button-small" type="Submit" value="Submit">
+          <a class="button button-small" href="../index.html">Cancel</a>
+        </div>
+      </form>
+    </ul>
 
   </div>
 
-
+<script>
+//Store user data
+function store(){
+  var user = document.getElementById("user").value;
+  localStorage.setItem("username", user);
+  var pass = document.getElementById("pass").value;
+  localStorage.setItem("password", pass);
+}
+</script>
 <script src="https://code.jquery.com/jquery.js"></script>
 <script src="../js/bootstrap.min.js"></script>
+<script src="../js/project.js"></script>
+
 </body>
 </html>

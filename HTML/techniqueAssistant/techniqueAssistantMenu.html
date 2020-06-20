@@ -15,25 +15,31 @@
 
   <!-- TOP BAR HTML -->
   <div class="topBar" id="topBar">
-      <img class="icon" src="../../images/menu_btn.png" onClick="showSideMenu()"></img>
-      <a href="../home.html"><img class="icon" src="../../images/home_btn.png" /></a>
+      <img id="menuButton" class="icon" src="../../images/menu_btn.png" onClick="showSideMenu()" />
+      <a id="homeButton" href="../home.html"><img class="icon homeButton" src="../../images/home_btn.png" /></a>
   </div>
+
 
   <div class="sideMenu" id="sideMenu">
     <a class="closeButton" onClick="hideSideMenu()">&times</a>
-    <p class="menuHeader" href="#"><img class="profileThumbnail" src="../../images/profile_pic.png" alt="Profile Picture" /> Username</p>
+    <div>
+      <img id="profileThumbnail" class="profileThumbnail" src="../../images/profile_pic.png" alt="Profile Picture" />
+      <span id="username" class="menuHeader" style="top:0px"> Username</span>
+    </div>
     <div class="divider"></div>
     <a class="menuOption" href="#" onClick="rotateArrow()"><img class="dropArrow" id=favoritesArrow src="../../images/drop_arrow.png" />Favorites</a>
     <a class="menuOption" href="#" onClick="rotateArrow()"><img class="dropArrow" id=settingsArrow src="../../images/drop_arrow.png" />Settings</a>
     <a class="menuOption" href="../index.html">Logout</a>
   </div>
 
+
   <!-- END TOP BAR HTML -->
 
   <!-- PAGE HTML -->
   <!-- search menu -->
   <div class="mhleft page">
-    <h1>Technique Assistant<h1>
+    <h1>Learn New Exercises</h1>
+    <div class="container titleUnderline"></div>
     <input type="text" id="mySearch" onkeyup="searchableMenu()" placeholder="Search for an exercise..." title="Type in a category">
 
     <div>

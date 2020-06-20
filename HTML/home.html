@@ -16,20 +16,23 @@
   <!-- TOP BAR HTML -->
   <div class="topBar" id="topBar">
       <img id="menuButton" class="icon" src="../images/menu_btn.png" onClick="showSideMenu()" />
-      <a id="homeButton" href="home.html"><img class="icon homeButton" src="../images/home_btn.png" /></a>
+      <a id="homeButton" href="home.html"><img class="icon" src="../images/home_btn.png"/></a>
   </div>
 
 
   <div class="sideMenu" id="sideMenu">
     <a class="closeButton" onClick="hideSideMenu()">&times</a>
-    <a class="menuHeader" href="#"><img class="profileThumbnail" src="../images/profile_pic.png" alt="Profile Picture" /> Username</a>
+    <div>
+      <img id="profileThumbnail" class="profileThumbnail" src="../images/profile_pic.png" alt="Profile Picture" />
+      <span id="username" class="menuHeader" style="top:0px"> Username</span>
+    </div>
     <div class="divider"></div>
 
     <!-- COMMENTED OUT FOR A4-->
     <!-- a class="menuOption" href="#" onClick="rotateArrow()"><img class="dropArrow" id=favoritesArrow src="../../images/drop_arrow.png" />Favorites</a -->
 
     <a class="menuOption" href="settings.html">Settings</a>
-    <a class="menuOption" href="../../index.html">Logout</a>
+    <a class="menuOption" href="../index.html">Logout</a>
   </div>
 
 
@@ -38,11 +41,14 @@
   <!-- PAGE HTML -->
 
   <div class="container page">
-    <ul class="pageItems" id="myMenu">
+      <div class="pageItems">
       <h1>What would you like to do?</h1>
-      <col><a class="btn btn-default homeOptions" href="techniqueAssistant/TechniqueAssistantMenu.html">Learn new exercises</a></col>
-      <col><a class="btn btn-default homeOptions" href="painInfo/painMenu.html">Check your technique</a></col>
-    </ul>
+      <div class="container titleUnderline"></div>
+      <div id="buttonContainer">
+        <a class="button button-large" href="techniqueAssistant/techniqueAssistantMenu.html">Learn new exercises</a>
+        <a class="button button-large" href="painInfo/painMenu.html">Get Pain Information</a>
+      </div>
+    </div>
   </div>
   <!-- END PAGE HTML -->
 
